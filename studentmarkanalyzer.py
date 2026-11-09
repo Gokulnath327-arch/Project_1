@@ -1,5 +1,5 @@
 import numpy as np
-subjects=["math", "phy", "che"]
+subjects = ["Maths", "Physics", "Chemistry"] 
 students={}
 
 def enterdetails():
