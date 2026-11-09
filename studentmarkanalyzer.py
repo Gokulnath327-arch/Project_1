@@ -3,9 +3,16 @@ subs=["math", "phy", "che"]
 stu={}
 
 def enterdetails():
-    print("Enter student details ('exit' to stop): ")
-    ch=''
-    while ch=='':
+    print("Enter student details : ")
+    ch='y'
+    while ch.lower()=='y':
+        k=input("Enter name: ")
+        m=input("Enter maths mark: ")
+        p=input("Enter physics mark: ")
+        c=input("Enter Chemistry mark: ")
+        l=[m,p,c]
+        stu[k]=l
+        ch=input("want to exit? (y/n) ")
         
 import numpy as np
 
