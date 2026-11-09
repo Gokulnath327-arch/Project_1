@@ -1,31 +1,28 @@
 import numpy as np
-subs=["math", "phy", "che"]
-stu={}
+subjects=["math", "phy", "che"]
+students={}
 
 def enterdetails():
     print("Enter student details : ")
     ch='y'
     while ch.lower()=='y':
         k=input("Enter name: ")
-        m=input("Enter maths mark: ")
-        p=input("Enter physics mark: ")
-        c=input("Enter Chemistry mark: ")
+        m=int(input("Enter maths mark: "))
+        p=int(input("Enter physics mark: "))
+        c=int(input("Enter Chemistry mark: "))
         l=[m,p,c]
-        stu[k]=l
-        ch=input("want to exit? (y/n) ")
-        
-import numpy as np
+        students[k]=l
+        ch=input("Enter another student detail? (y/n) ")
 
-subjects = ["Maths", "Physics", "Chemistry"]          
 
-students = {                                          
-    "Aarav": [78, 85, 90],
-    "Diya": [92, 88, 95],
-    "Karthik": [65, 70, 58],
-    "Meena": [88, 91, 84],
-    "Rahul": [45, 52, 60],
-    "Sneha": [99, 94, 97],
-}
+# students = {                                          
+#     "Aarav": [78, 85, 90],
+#     "Diya": [92, 88, 95],
+#     "Karthik": [65, 70, 58],
+#     "Meena": [88, 91, 84],
+#     "Rahul": [45, 52, 60],
+#     "Sneha": [99, 94, 97],
+# }
 
 
 
@@ -85,6 +82,7 @@ def binary_search(sorted_names, target):
 
 
 def main():
+    enterdetails()
     pairs = []                                    
     for name in students:
         avg = average(students[name])
