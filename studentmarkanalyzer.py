@@ -1,4 +1,12 @@
+import numpy as np
+subs=["math", "phy", "che"]
+stu={}
 
+def enterdetails():
+    print("Enter student details ('exit' to stop): ")
+    ch=''
+    while ch=='':
+        
 import numpy as np
 
 subjects = ["Maths", "Physics", "Chemistry"]          
